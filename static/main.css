@@ -1,0 +1,81 @@
+.circle {
+  position: relative;
+  -moz-border-radius: 800px/800px;
+  -webkit-border-radius: 800px 800px;
+  border-radius: 800px/800px;
+  border: 0px;
+  width: 800px;
+  height: 800px;
+}
+
+.yarn {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  display: inline-block;
+  border-style: 30px solid black;
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+#yarn-1 {
+  background-image: url("yarn-1.png");
+  left: 0;
+  margin-top: 120px;
+  margin-left: 20px;
+}
+#yarn-2 {
+  background-image: url("yarn-2.png");
+  top: 0;
+  margin-left: 275px;
+}
+#yarn-3 {
+  background-image: url("yarn-3.png");
+  margin-top: 380px;
+  margin-left: 20px;
+}
+#yarn-4 {
+  background-image: url("yarn-4.png");
+  bottom: 0;
+  margin-left: 275px;
+}
+#yarn-5 {
+  background-image: url("yarn-5.png");
+  right: 0;
+  margin-top: 120px;
+  margin-right: 20px;
+}
+#yarn-6 {
+  background-image: url("yarn-6.png");
+  right: 0;
+  margin-top: 380px;
+  margin-right: 20px;
+}
+
+video {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  margin-top: 350px;
+  left: 0;
+  margin-left: 355px;
+  display: inline-block;
+}
+
+#join {
+  font-size: 30px;
+}
+
+#needles {
+  margin-top: 255px;
+  margin-left: 350px;
+}

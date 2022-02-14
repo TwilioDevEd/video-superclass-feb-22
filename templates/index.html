@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twilio Video Chat</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="{{ url_for('static', filename='favicon.png') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='main.css') }}"
+    />
+    <!-- Include the Twilio Video SDK -->
+    <script src="//media.twiliocdn.com/sdk/js/video/releases/2.17.1/twilio-video.min.js"></script>
+  </head>
+  <body>
+    <div class="circle">
+      <div class="yarn" id="yarn-1"></div>
+      <div class="yarn" id="yarn-2"></div>
+      <div class="yarn" id="yarn-3"></div>
+      <div class="yarn" id="yarn-4"></div>
+      <div class="yarn" id="yarn-5"></div>
+      <div class="yarn" id="yarn-6"></div>
+      <div class="center" id="start">
+        <input type="text" id="identity" placeholder="Your name" /><br />
+        <button id="join">Join!</button>
+      </div>
+      <img
+        id="needles"
+        src="{{ url_for('static', filename='needles.png') }}"
+        height="290px"
+      />
+    </div>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </body>
+</html>
