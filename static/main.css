@@ -71,11 +71,21 @@ video {
   display: inline-block;
 }
 
-#join {
+button {
   font-size: 30px;
 }
 
 #needles {
   margin-top: 255px;
   margin-left: 350px;
+}
+
+#presentation {
+  display: inline-block;
+  margin-left: 550px;
+}
+
+#stop {
+  margin-bottom: 0px;
+  margin-left: 570px;
 }

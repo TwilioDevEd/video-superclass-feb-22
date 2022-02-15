@@ -13,9 +13,11 @@
       href="{{ url_for('static', filename='main.css') }}"
     />
     <!-- Include the Twilio Video SDK -->
-    <script src="//media.twiliocdn.com/sdk/js/video/releases/2.17.1/twilio-video.min.js"></script>
+    <script src="//media.twiliocdn.com/sdk/js/video/releases/2.20.0/twilio-video.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@twilio/video-room-monitor/dist/browser/twilio-video-room-monitor.js"></script>
   </head>
   <body>
+    <div id="presentation"></div>
     <div class="circle">
       <div class="yarn" id="yarn-1"></div>
       <div class="yarn" id="yarn-2"></div>
@@ -27,12 +29,14 @@
         <input type="text" id="identity" placeholder="Your name" /><br />
         <button id="join">Join!</button>
       </div>
+      <button class="center" id="present" style="display: none">Present</button>
       <img
         id="needles"
         src="{{ url_for('static', filename='needles.png') }}"
         height="290px"
       />
     </div>
+    <button id="stop" style="display: none">Stop presenting</button>
     <script src="{{ url_for('static', filename='main.js') }}"></script>
   </body>
 </html>

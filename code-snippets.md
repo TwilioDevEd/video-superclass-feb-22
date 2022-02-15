@@ -13,7 +13,7 @@ curl -X POST http://localhost:5000/token -H "Content-Type: application/json" -d 
 
 ## Diagnostic app URL
 
-https://rtc-diagnostics-video-1x6zv5vy-3924-dev.twil.io
+https://rtc-diagnostics-video-v85e6pdu-1515-dev.twil.io
 
 ## Video Processors Demo
 

@@ -1,7 +1,7 @@
 # Twilio Video Demo
 
 This is the code written during the live Twilio Video
-demo during Twilio's Signal 2021 Superclass.
+demo during Twilio's February 2022 Superclass.
 
 It creates a simple Video application that displays a virtual
 knitting circle and populates each yarn ball with an HTML
@@ -53,14 +53,15 @@ This will start a server that you can access on your
 local machine at port 5000 (`localhost:5000`). You can view the application
 at [http://localhost:5000](http://localhost:5000).
 
+This app users Client Side Room Creation. Make sure client side room creation
+is enabled in the [Twilio Console](https://www.twilio.com/console/video/configure).
+
 Can't wait to see what you build with Twilio Video!
 
 ## Other branches
 
 - `superclass-demo`: The code we wrote in this class (to be committed after the demo is over)
-- `blurred-backgrounds`: Uses Twilio's [Video Processors](https://www.twilio.com/docs/video/video-processors) to blur a participant's background
-- `livestream`: Uses [Twilio Live](https://www.twilio.com/docs/live) to livestream the video room
-- `full-commented-code`: A full version of the application we're building during the Superclass, with comments on each aspect
+- `presentation`: Code to demonstrate the full-screen presentation mode that uses adaptive simulcast
 
 ## Other Resources
 
@@ -69,7 +70,8 @@ Can't wait to see what you build with Twilio Video!
 ### Troubleshooting and Diagnostics
 
 - [Video Insights](https://www.twilio.com/docs/video/troubleshooting/insights)
-- [Preflight check API](https://github.com/twilio/twilio-video.js/blob/master/CHANGELOG.md#2160-august-11-2021)
+- [Preflight check API](https://www.twilio.com/docs/video/troubleshooting/preflight-api)
+- [RTC Diagnostics SDK](https://github.com/twilio/rtc-diagnostics)
 - [Video Diagnostics App](https://www.twilio.com/blog/video-diagnostics-app-reactjs-preflight-api)
 - [Video Monitor](https://www.npmjs.com/package/@twilio/video-room-monitor)
 - [Network Quality API](https://www.twilio.com/docs/video/using-network-quality-api)
@@ -83,6 +85,8 @@ Can't wait to see what you build with Twilio Video!
 
 ### Twilio Live
 
+Live stream your video applications to an unlimited audience.
+
 - [Twilio Live overview](https://www.twilio.com/docs/live/overview)
 - [Live video demo application](https://www.twilio.com/docs/live/build-an-interactive-live-video-streaming-experience)
 - [Build a video livestreaming application with Twilio Live and Express](https://www.twilio.com/blog/build-livestreaming-application-twilio-live-express)
@@ -91,7 +95,7 @@ Can't wait to see what you build with Twilio Video!
 
 ### Other
 
-- [Ad-hoc room creation](https://www.twilio.com/docs/video/tutorials/understanding-video-rooms#ad-hoc-rooms): Create a Room from the browser, without a server
+- [Video API](https://www.twilio.com/docs/video/api): Create and manage resources like Rooms and Participants from your server
 - [Dominant Speaker Detection](https://www.twilio.com/docs/video/detecting-dominant-speaker): Detect the currently active speaker in a Room
 - [Track Subscription API](https://www.twilio.com/docs/video/api/track-subscriptions): Fine-tune which tracks participants will subscribe to in a Room
 - [Recordings and compositions](https://www.twilio.com/docs/video/tutorials/understanding-video-recordings-and-compositions): Record group rooms and lay them out in a specific format with compositions.
